@@ -11,6 +11,9 @@ const Tenor = require("tenorjs").client({
 // App Setup
 const app = express();
 
+// Files live in the public folder
+app.use(express.static('public'));
+
 // Middleware
 const exphbs  = require('express-handlebars');
 
